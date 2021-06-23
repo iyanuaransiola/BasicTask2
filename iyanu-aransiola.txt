@@ -1,0 +1,14 @@
+
+		Question A: EXPLAIN THE BASIC RULES OF CSS SPECIFICITY
+Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.
+The universal selector (*) has low specificity, while ID selectors are highly specific! 
+Equal specificity: the latest rule counts - If the same rule is written twice into the external style sheet, then the lower rule in the style sheet is closer to the element to be styled, and therefore will be applied:
+For example
+
+
+		Question B: EXPLAIN THE THREE MAIN WAYS TO APPLY CSS TO A WEB PAGE
+
+
+
+
+		Question C: EXPLAIN THE THREE MAIN WAYS TO TARGET ELEMENTS
