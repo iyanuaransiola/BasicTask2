@@ -1,5 +1,4 @@
-
-				Question A: EXPLAIN THE BASIC RULES OF CSS SPECIFICITY
+Question A: EXPLAIN THE BASIC RULES OF CSS SPECIFICITY
 
 One of the fundamental concepts of CSS is specificity and it entails how CSS is applied to HTML. It also determines which style declarations are ultimately applied to an element
 This applies when the same element is targeted by multiple declarations, causing conflict of interest, hence  is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. 
@@ -62,79 +61,39 @@ Create a new .css file, and add the style rules. For example:
 Next: In the <head> section of the HTML sheet, add a reference to the external .css file right after <title> tag:
 					<link rel="stylesheet" type="text/css" href="style.css" />
 
+(3) Inline CSS
+Inline CSS is used to style a specific HTML element. For this CSS style, one will only need to add the style attribute to each HTML tag, without using selectors.
 
-Advantages of External CSS:
-Since the 
-Disadvantages of External CSS:
-Your pages may not be rendered correctly until the external CSS is loaded.
-Uploading or linking to multiple CSS files can increase your site’s download time.
-
-Inline CSS
-Inline CSS is used to style a specific HTML element. For this CSS style, you’ll only need to add the style attribute to each HTML tag, without using selectors.
-
-This CSS type is not really recommended, as each HTML tag needs to be styled individually. Managing your website may become too hard if you only use inline CSS.
-
-However, inline CSS in HTML can be useful in some situations. For example, in cases where you don’t have access to CSS files or need to apply styles for a single element only.
-
-Let’s take a look at an example. Here, we add an inline CSS to the <p> and <h1> tag:
-
+This CSS type is not really recommended, as each HTML tag needs to be styled individually. Managing one’s website may become too hard and cumbersome if one only use inline CSS. Here is an instance of Inline style:
+Here, we add an inline CSS to the <p> and <h1> tag:
 <!DOCTYPE html>
 <html>
 <body style="background-color:black;">
-
 <h1 style="color:white;padding:30px;">Hostinger Tutorials</h1>
 <p style="color:white;">Something usefull here.</p>
-
 </body>
 </html>
-Advantages of Inline CSS:
-You can easily and quickly insert CSS rules to an HTML page. That’s why this method is useful for testing or previewing the changes, and performing quick-fixes to your website.
-You don’t need to create and upload a separate document as in the external style.
-Disadvantages of Inline CSS:
-Adding CSS rules to every HTML element is time-consuming and makes your HTML structure messy.
-Styling multiple elements can affect your page’s size and download time.
-Conclusion
-In this tutorial, you’ve learned the difference between the three types of CSS: internal, external, and inline. Here’s the recap:
 
-Internal or embedded ?— add <style> tag in the <head> section of HTML document
-External ?— link the HTML sheet to a separate .css file
-Inline ?— apply CSS rules for specific elements.
+
+****Summarily, Internal or embedded ?— add <style> tag in the <head> section of HTML document
+      External ?— link the HTML sheet to a separate .css file
+        	      Inline ?— apply CSS rules for specific elements.
 CSS can be applied to HTML or XHTML using three methods: linked/external, embedded/Internal, and inline. 
-In the linked method, the CSS is stored in a separate file, instead of directly in the HTML page. In the embedded method, CSS is stored as part of the HTML page, in the header section. In the inline method, CSS is stored directly in the style attributes of the HTML tags, as <div style="font-weight:bold">Bold Font</div>.
+In the linked method, the CSS is stored in a separate file, instead of directly in the HTML page. 
+In the embedded method, CSS is stored as part of the HTML page, in the header section. In the inline method, CSS is stored directly in the style attributes of the HTML tags, as <div style="font-weight:bold">Bold Font</div>.
 
-The neatest method is probably the linked one, but the other ones are convenient and quick in the phases of prototyping a web page. The embedded and inline methods do not require having a separate file. The inline method saves you the trouble of considering what CSS classes your document should have. For a larger site, in which many web pages share the same styling, and in which the styling should be customizable by the user, the linked method is the only viable option.
-
-With linked CSS, CSS rules are stored in a separate file. To refer to that file from the HTML page, add the link element (and its closing element within XHTML) to the head element, as shown in the following example, which assumes that the stylesheet is stored in the file named "style.css".
-<head>
-    <title>Example Web Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-Embedded CSS is CSS that is located in the header of the HTML document that requires styling. For example we would like the text in this HTML document to appear bold
-<head>
-   <title>Example Web Page</title>
-   <style type="text/css">
-    p {
-     font-weight:bold;
-    }
-   </style>
-  </head>
-
-Inline CSS is specified directly in the opening tag of the element you want it to apply to. It is entered into the style attribute within HTML or XHTML 1.1.
-
-For example
-
- <div style="font-weight:bold; color:red;">Bold Font</div>
 
 
 
 		Question C: EXPLAIN THE THREE MAIN WAYS TO TARGET ELEMENTS
 
 In CSS, selectors are used to target the HTML elements on our web pages that we want to style.
-You have met selectors already. A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.
-1. This group includes selectors that target an HTML element such as an <h1>. 
+ A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. 
+The element or elements which are selected by the selector are referred to as the subject of the selector.
+
+One of the way is the selectors that target an HTML element such as an <h1>. 
 hence we'll get h1 { } for the css syntax incorporation.
 
 2.It also includes selectors which target a class: .box { }
 
-3. or, an ID: #unique { }
+3. or, an ID slector such as this: #unique { }
